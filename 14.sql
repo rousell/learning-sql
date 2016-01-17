@@ -1,1 +1,1 @@
-SELECT BillingCountry,COUNT(*) AS "Invoice Count" FROM Invoice GROUP BY BillingCountry
+SELECT Invoice.BillingCountry,COUNT(*) AS "Invoice Count" FROM Invoice GROUP BY Invoice.BillingCountry

@@ -1,7 +1,7 @@
 SELECT
   SQ.Name AS "Album Name",
   SQ.MediaType AS "Media Type",
-  Genre.Name AS "Genre",
+  Genre.Name AS "Genre"
 FROM (SELECT
         T.Name,
         T.Composer,
@@ -12,5 +12,3 @@ FROM (SELECT
         T.GenreId
       FROM Track AS T JOIN MediaType ON T.MediaTypeId == MediaType.MediaTypeId) AS SQ
 JOIN Genre ON Genre.GenreId == SQ.GenreId
-
--- Genre Id is still in the resultant Table

@@ -1,1 +1,3 @@
-SELECT BillingCountry FROM Invoice GROUP BY BillingCountry
+SELECT BillingCountry
+FROM Invoice
+  GROUP BY BillingCountry

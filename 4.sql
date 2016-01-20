@@ -1,2 +1,4 @@
-SELECT * FROM Employee WHERE Title == "Sales Agent"
+SELECT *
+FROM Employee
+  WHERE Title == "Sales Agent"
 

@@ -6,3 +6,4 @@ FROM (SELECT *
 JOIN Artist ON Artist.ArtistId == SQ.ArtistId
   GROUP BY Artist.ArtistId
   ORDER BY PurchasedQuantity DESC
+  LIMIT 3

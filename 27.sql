@@ -4,3 +4,4 @@ FROM
 JOIN MediaType ON MediaType.MediaTypeId == SQ.MediaTypeId
   GROUP BY MediaType.Name
   ORDER BY Quantity DESC
+  LIMIT 1

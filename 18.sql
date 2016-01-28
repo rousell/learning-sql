@@ -1,7 +1,7 @@
 SELECT
   SQ.FirstName AS "Sales Agent First Name",
   SQ.LastName AS "Sales Agent Last Name",
-  COUNT(Invoice.Total) AS "Total Sales"
+  ROUND(SUM(Invoice.Total),2) AS "Total Sales"
 FROM(SELECT
       E.*,
       C.CustomerId

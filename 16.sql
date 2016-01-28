@@ -4,10 +4,6 @@ SELECT
   Genre.Name AS "Genre"
 FROM (SELECT
         T.Name,
-        T.Composer,
-        T.Milliseconds,
-        T.Bytes,
-        T.UnitPrice,
         MediaType.Name AS "MediaType",
         T.GenreId
       FROM Track AS T JOIN MediaType ON T.MediaTypeId == MediaType.MediaTypeId) AS SQ
